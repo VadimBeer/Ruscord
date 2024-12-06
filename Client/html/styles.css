@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(45,49,56);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.svg-l, .svg-r {
+  position: absolute;
+  background: rgba(49, 53, 60, 0.502);
+  border: 1px solid rgba(0, 0, 0, 1);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.svg-l {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="592" height="768" viewBox="0 0 592 768" fill="none"><path d="M451 410.5C268.6 291.7 242.667 83.6667 252.5 -5.5H-67L-34 878L560.397 824.469C599.833 734.21 632.029 528.407 451 410.5Z" fill="%2331353C" fill-opacity="0.8"/></svg>') no-repeat;
+  background-size: contain;
+}
+
+.svg-r {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="488" height="646" viewBox="0 0 488 646" fill="none"><path d="M486.142 645.852C327.642 595.185 8.54195 398.752 0.14195 18.3515C-10.3581 -457.148 565.142 -50.1485 567.142 -23.1485C568.742 -1.54845 513.809 431.852 486.142 645.852Z" fill="%2331353C" fill-opacity="0.501961"/></svg>') no-repeat;
+  background-size: contain;
+  background-position: top right;
+  z-index: -2;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -3;
+}
+
+.login-container {
+  position: fixed;
+  top: 50%;
+  left: 50.7%;
+  width: 400px;
+  height: 400px;
+  background-color: #3e3e3e;
+  border-radius: 15px;
+  padding: 3px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #ff6a00;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 1vw 0;
+  padding: 1vw;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 1vw;
+  font-size: 1rem;
+  background-color: #ff6a00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e55a00;
+}
+
+.links {
+  margin-top: 2vw;
+}
+
+.links a {
+  color: #ff6a00;
+  text-decoration: none;
+  margin: 0 1vw;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.svg-krugRightBig {
+  position: absolute;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="252" height="252" viewBox="0 0 252 252" fill="none"><g filter="url(%23filter0_d_1_52)"><circle cx="130.948" cy="120.996" r="120.5" transform="rotate(179.787 130.948 120.996)" fill="%23FF7F50"/></g><defs><filter id="filter0_d_1_52" x="0.44754" y="0.495682" width="251" height="251" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="-6" dy="6"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_52"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_52" result="shape"/></filter></defs></svg>') no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: 13vh;
+  right: 10vw;
+  width: 15vw;
+  height: 20vw;
+}
+
+@media screen and (max-width: 768px) {
+  .login-container {
+      width: 80vw;
+      height: 60vh;
+      top: 20vh;
+      left: 10vw;
+  }
+
+  .svg-krugRightBig {
+      width: 60vw;
+      height: 60vw;
+
+  }
+
+  .svg-l, .svg-r{
+      width: 50vw;
+      height: 60vw;
+      top: 10vh;
+      right: 10vw;
+  }
+}
