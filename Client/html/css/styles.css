@@ -1,0 +1,200 @@
+:root {
+  --scale-r: 1;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #ff6a00;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(45, 49, 56);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -12;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -3;
+}
+.background .background__backsides-left, .background .background__backsides-right {
+  position: absolute;
+  background: rgba(49, 53, 60, 0.502);
+  border: 1px solid rgb(0, 0, 0);
+  top: 0px;
+  left: 0;
+  width: calc(100vw * var(--scale-r));
+  height: calc(100vh * var(--scale-r));
+}
+.background .background__backsides-left {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="592" height="768" viewBox="0 0 592 768" fill="none"><path d="M451 410.5C268.6 291.7 242.667 83.6667 252.5 -5.5H-67L-34 878L560.397 824.469C599.833 734.21 632.029 528.407 451 410.5Z" fill="%2331353C" fill-opacity="0.8"/></svg>') no-repeat;
+  background-size: contain;
+  background-position: top left;
+}
+.background .background__backsides-right {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="488" height="646" viewBox="0 0 488 646" fill="none"><path d="M486.142 645.852C327.642 595.185 8.54195 398.752 0.14195 18.3515C-10.3581 -457.148 565.142 -50.1485 567.142 -23.1485C568.742 -1.54845 513.809 431.852 486.142 645.852Z" fill="%2331353C" fill-opacity="0.501961"/></svg>') no-repeat;
+  background-size: contain;
+  background-position: top right;
+}
+.background__svg-krugLeftBig {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="252" height="252" viewBox="0 0 252 252" fill="none"><circle cx="130.948" cy="120.996" r="120.5" fill="%23FF7F50"/></svg>') no-repeat;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-size: contain;
+  top: 65%;
+  left: 14%;
+  width: 15vw;
+  height: 15vw;
+  z-index: 1;
+}
+.background__svg-krugLeftSmalle {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="193" height="193" viewBox="0 0 193 193" fill="none"><circle cx="96.2706" cy="96.3565" r="96" fill="%23F27548"/></svg>') no-repeat;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-size: contain;
+  top: 70.5%;
+  left: 11.5%;
+  width: 10vw;
+  height: 10vw;
+}
+.background__svg-krugLeftBlur {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="252" height="252" viewBox="0 0 252 252" fill="none"><circle cx="130.948" cy="120.996" r="120.5" fill="%23FF7F50"/></svg>') no-repeat;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-size: contain;
+  top: 65%;
+  left: 14%;
+  width: 15vw;
+  height: 15vw;
+  -webkit-filter: drop-shadow(10px -10px 50px rgb(255, 127, 80));
+          filter: drop-shadow(10px -10px 50px rgb(255, 127, 80));
+  opacity: 50%;
+}
+.background__svg-krugRightBig {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="252" height="252" viewBox="0 0 252 252" fill="none"><circle cx="130.948" cy="120.996" r="120.5" fill="%23FF7F50"/></svg>') no-repeat;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-size: contain;
+  top: 40%;
+  left: 84%;
+  width: 15vw;
+  height: 15vw;
+  z-index: 1;
+}
+.background__svg-krugRightSmalle {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="193" height="193" viewBox="0 0 193 193" fill="none"><circle cx="96.2706" cy="96.3565" r="96" fill="%23F27548"/></svg>') no-repeat;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-size: contain;
+  top: 33.5%;
+  left: 87.5%;
+  width: 10vw;
+  height: 10vw;
+}
+.background__svg-krugRightBlur {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="252" height="252" viewBox="0 0 252 252" fill="none"><circle cx="130.948" cy="120.996" r="120.5" fill="%23FF7F50"/></svg>') no-repeat;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-size: contain;
+  top: 40%;
+  left: 84%;
+  width: 15vw;
+  height: 15vw;
+  -webkit-filter: drop-shadow(10px -10px 50px rgb(255, 127, 80));
+          filter: drop-shadow(10px -10px 50px rgb(255, 127, 80));
+  opacity: 50%;
+}
+
+.login-container {
+  position: fixed;
+  top: 50%;
+  left: 50.7%;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(57, 62, 70);
+  border-radius: 20px;
+  padding: 3px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.login-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.login-container form input {
+  margin: 16px 20px;
+  padding: 20px;
+  font-size: 19px;
+  border: none;
+  border-radius: 17px;
+  outline: none;
+}
+.login-container form button {
+  padding: 1vw;
+  font-size: 1rem;
+  background-color: #ff6a00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-container form button:hover {
+  background-color: #e55a00;
+}
+.login-container .links {
+  margin-top: 2vw;
+}
+.login-container .links a {
+  color: #ff6a00;
+  text-decoration: none;
+  margin: 0 1vw;
+}
+.login-container .links a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --scale-r: 0.8;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --scale-r: 0.6;
+  }
+}

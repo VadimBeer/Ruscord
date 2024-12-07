@@ -1,0 +1,23 @@
+@mixin backsides__all () {
+    position: absolute;
+    background: rgba(49, 53, 60, 0.502);
+    border: 1px solid rgba(0, 0, 0, 1); 
+    top: 0px;
+    left: 0;
+    width: calc(100vw * var(--scale-r));
+    height: calc(100vh * var(--scale-r));
+}
+@mixin backsides ($b-pos) {
+    background-size: contain;
+    background-position: $b-pos;
+    
+}
+@mixin circle($top, $left, $width, $height){
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+  }
